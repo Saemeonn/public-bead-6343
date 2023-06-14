@@ -36,6 +36,7 @@ import { useState } from "react";
 import { is } from "@babel/types";
 import Dashboard from "../Feeds";
 import { CiBrightnessDown, CiBrightnessUp, CiStar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 
 
@@ -84,10 +85,15 @@ export default function Navbar() {
         {/* <img src={require("../../ArtChatwhite.png")} alt="" /> */}
         <Tabs mt={25} size={"lg"} variant="unstyled" >
           <TabList >
-            <Tab pt={25} onClick={(() => { setElem("dash") })}> Products</Tab>
+            <Tab pt={25} > 
+            <Link to="/">Home</Link>
+            </Tab>
             <Tab pt={25} onClick={(() => {  })}>Solutions</Tab>
             <Tab pt={25} onClick={(() => {  })}>Services</Tab>
-            {isAuth && <Tab pt={25} isDisabled={isAuth === false} onClick={(() => { })}>Connectivity</Tab>}
+            {isAuth && <Tab pt={25} isDisabled={isAuth === false} onClick={(() => { })}>
+              
+              <Link to="connect">Connectivity</Link>
+              </Tab>}
               {!isAuth &&
                 <Popover>
                 <PopoverTrigger>
@@ -102,7 +108,10 @@ export default function Navbar() {
               </Popover>
 
               }
-           {isAuth &&  <Tab pt={25} isDisabled={isAuth === false} onClick={(() => { setElem("dis") })}>Case Studies</Tab>}
+           {isAuth &&  <Tab pt={25} isDisabled={isAuth === false} onClick={(() => { setElem("dis") })}> 
+           <Link to="casestudies"> Case Studies</Link>
+          
+           </Tab>}
             {!isAuth &&
                 <Popover>
                 <PopoverTrigger>
@@ -124,6 +133,14 @@ export default function Navbar() {
             bg="orange.500"
             borderRadius="1px" />
           <TabPanels>
+            <TabPanel>
+            </TabPanel>
+            <TabPanel>
+            </TabPanel>
+            <TabPanel>
+            </TabPanel>
+            <TabPanel>
+            </TabPanel>
             <TabPanel>
             </TabPanel>
             <TabPanel>

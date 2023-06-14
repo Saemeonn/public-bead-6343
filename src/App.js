@@ -18,15 +18,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div>
-      {elem==="dash" && <Dashboard />} 
-      </div>
-      
-      {isAuth  &&
-      <div>
-        {elem==="dis" && <Casestudies/>}
-      </div>
-      }
      <AllRoutes />
     </div>
   );
