@@ -1,0 +1,40 @@
+.Dash{
+        display: block;
+        /* background-color: black; */
+        padding-top: 30px;
+}
+
+
+.feeds{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+  }
+  .feeds img{
+    width: 100%;
+  }
+  .feeds h3{
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .feeds h5{
+    color: rgb(133, 133, 133);
+    cursor: pointer;
+  }
+  .postDetail{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+  }
+  .interct{
+    width: 35%;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+  }
+  .interct:hover{
+    cursor: pointer;
+  }

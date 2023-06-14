@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john",
+      "password": "password123",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "username": "tiana",
+      "password": "password456",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "ropeswag",
+      "password": "password789",
+      "role": "user"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Avelex Stats UI",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/2a4ab2165903105.Y3JvcCwxNjE2LDEyNjQsMCww.jpg",
+      "date": "2022-01-01",
+      "category": "Photography",
+      "author_id": 2,
+      "likes": 1563,
+      "views": 15515,
+      "username": "tiana"
+    },
+    {
+      "id": 2,
+      "title": "Raino breeze dude",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/aa12c6167039127.Y3JvcCw2NTI2LDUxMDQsMjAzNSw0MzI5.png",
+      "date": "2022-01-02",
+      "category": "Digital Art",
+      "author_id": 3,
+      "likes": 488,
+      "views": 6804,
+      "username": "ropeswag"
+    },
+    {
+      "id": 3,
+      "title": "Drip flip",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e6455d166770471.Y3JvcCwxMzgwLDEwODAsMjU5LDA.jpg",
+      "date": "2022-01-03",
+      "category": "Product Design",
+      "author_id": 2,
+      "likes": 408,
+      "views": 3020,
+      "username": "tiana"
+    },
+    {
+      "id": 4,
+      "title": "Orientation",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/7a1271167025853.Y3JvcCwxOTIwLDE1MDEsMCww.png",
+      "date": "2022-01-04",
+      "category": "Product Design",
+      "author_id": 1,
+      "likes": 140,
+      "views": 1500,
+      "username": "john"
+    },
+    {
+      "id": 5,
+      "title": "Mick Flawed",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/dddbc3167753447.Y3JvcCw4MzgsNjU1LDAsNA.jpg",
+      "date": "2022-01-04",
+      "category": "Illustrations",
+      "author_id": 1,
+      "likes": 38,
+      "views": 670,
+      "username": "john"
+    },
+    {
+      "id": 6,
+      "title": "Naver line works 23",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/0a428f168615739.Y3JvcCwxNDc2LDExNTUsMjE1LDA.png",
+      "date": "2022-01-04",
+      "category": "Illustrations",
+      "author_id": 2,
+      "likes": 408,
+      "views": 3020,
+      "username": "tiana"
+    },
+    {
+      "id": 7,
+      "title": "100 THIEVES",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/c2079b165619959.Y3JvcCwyNzYxLDIxNjAsNTQwLDA.png",
+      "date": "2022-01-04",
+      "category": "Graphics Design",
+      "author_id": 3,
+      "likes": 3008,
+      "views": 6020,
+      "username": "ropeswag"
+    }
+  ]
+}
