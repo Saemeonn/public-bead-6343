@@ -6,7 +6,7 @@ import { createContext } from 'react';
 export const AuthContext = createContext();
 
 function ThemeProvider({children}) {
-  const [isAuth,setIsAuth] = useState(true);
+  const [isAuth,setIsAuth] = useState(false);
   const [theme,setTheme] = useState("light");
   const [loading,setLoad] = useState(false);
   const [error,setErr] = useState(false);

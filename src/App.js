@@ -8,7 +8,7 @@ import Casestudies from './components/Pages/Casestudies';
 import AllRoutes from './components/AllRoutes/AllRoutes';
 
 function App() {
-  const { isAuth,loading,elem } = useContext(AuthContext)
+  const { isAuth,loading,elem,theme } = useContext(AuthContext)
   useEffect(()=>{
 
   },[isAuth,elem])
@@ -16,7 +16,7 @@ function App() {
 		return <Spinner color='red.500' />
 	}
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:theme==="light"? "white" : "black",color:theme!=="light"? "white" : "black"}}>
       <Navbar />
      <AllRoutes />
     </div>

@@ -25,9 +25,20 @@ import {
   PopoverCloseButton,
   PopoverAnchor,
 } from '@chakra-ui/react'
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+} from '@chakra-ui/react'
+import { Grid, GridItem } from '@chakra-ui/react'
 import App from "../../App";
 import "../Navabar/nav.css"
-import { BellIcon, MoonIcon, Search2Icon, SunIcon } from "@chakra-ui/icons";
+import { BellIcon, ChevronDownIcon, ExternalLinkIcon, MoonIcon, Search2Icon, SunIcon } from "@chakra-ui/icons";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import InternalStateEx from "../Popover";
 import { useContext, useEffect } from 'react';
@@ -80,26 +91,79 @@ export default function Navbar() {
   }, [message])
   // console.log("auth", isAuth,message);
   return (
-    <div className="navbar" style={{backgroundColor: theme==="light"? "white":"black", color:theme==="light"? "black":"white"}}>
+    <div className="navbar" style={{ backgroundColor: theme === "light" ? "white" : "black", color: theme === "light" ? "black" : "white" }}>
       <div>
         {/* <img src={require("../../ArtChatwhite.png")} alt="" /> */}
         <Tabs mt={25} size={"lg"} variant="unstyled" >
           <TabList >
-            <Tab pt={25} > 
-            <Link to="/">Home</Link>
+            <Tab pt={25} >
+              <Link to="/" >Home</Link>
             </Tab>
-            <Tab pt={25} onClick={(() => {  })}>Solutions</Tab>
-            <Tab pt={25} onClick={(() => {  })}>Services</Tab>
+
+            <Tab pt={25} onClick={(() => { })}>
+              <Menu >
+                <MenuButton as={Tab} backgroundColor={theme === "light" ? "white" : "black"} >
+                  Solutions
+                </MenuButton>
+                <MenuList p={"20px "} backgroundColor={theme === "light" ? "white" : "black"}>
+                  <h1 style={{ margin: "20px 0 20px 0", fontWeight: "600", fontSize: "25px",color: theme==="light"? "black" : "orange"  }}>Trading Platform Components</h1>
+                  <MenuItem backgroundColor={theme === "light" ? "white" : "black"}> <Link to='/'>Web Trader</Link> </MenuItem>
+                  <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Mobile App</MenuItem>
+                  <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Order Management</MenuItem>
+                  <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Risk Management</MenuItem>
+                  <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>FIX/FAST Gateways</MenuItem>
+                </MenuList>
+              </Menu>
+            </Tab>
+
+
+
+
+            <Tab pt={25} onClick={(() => { })}>
+              <Menu >
+                <MenuButton as={Tab} backgroundColor={theme === "light" ? "white" : "black"} >
+                  Services
+                </MenuButton>
+                <MenuList p={"20px "} backgroundColor={theme === "light" ? "white" : "black"}>
+                  <h1 style={{ margin: "20px 0 20px 0", fontWeight: "600", fontSize: "25px", color: theme==="light"? "black" : "orange" }}>Services By Industry Proffesionals</h1>
+                  <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+
+                    <GridItem >
+                      <div>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}> <Link to='/'>Web Trader</Link> </MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>FinancialSoftware Development</MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>UI/UX design</MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Financial System Maintenance & Support</MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"} rightIcon={<ChevronDownIcon />} >Market Data {"  "} <ExternalLinkIcon ml={"5px"} /></MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Innovation for Fintech</MenuItem>
+                      </div>
+                    </GridItem>
+                    <GridItem >
+                      <div>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}> <Link to='/'>QA Overview</Link> </MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>QA Consulting</MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>QA Audit</MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Funtional Testing</MenuItem>
+                        <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Custom Services</MenuItem>
+                      </div>
+                    </GridItem>
+                  </Grid>
+
+                </MenuList>
+              </Menu>
+
+
+            </Tab>
             {isAuth && <Tab pt={25} isDisabled={isAuth === false} onClick={(() => { })}>
-              
+
               <Link to="connect">Connectivity</Link>
-              </Tab>}
-              {!isAuth &&
-                <Popover>
+            </Tab>}
+            {!isAuth &&
+              <Popover backgroundColor={theme === "light" ? "white" : "black"}>
                 <PopoverTrigger>
-                <Tab pt={25} color={'grey'}>Connectivity</Tab>
+                  <Tab pt={25} color={'grey'}>Connectivity</Tab>
                 </PopoverTrigger>
-                <PopoverContent w='520px' p='10px' fontSize={20}>
+                <PopoverContent w='520px' p='10px' fontSize={20 } backgroundColor={theme === "light" ? "white" : "black"}>
                   <PopoverArrow />
                   <PopoverCloseButton />
                   <PopoverHeader>You Need to Login First!</PopoverHeader>
@@ -107,25 +171,25 @@ export default function Navbar() {
                 </PopoverContent>
               </Popover>
 
-              }
-           {isAuth &&  <Tab pt={25} isDisabled={isAuth === false} onClick={(() => { setElem("dis") })}> 
-           <Link to="casestudies"> Case Studies</Link>
-          
-           </Tab>}
+            }
+            {isAuth && <Tab pt={25} isDisabled={isAuth === false} onClick={(() => { setElem("dis") })}>
+              <Link to="casestudies"> Case Studies</Link>
+
+            </Tab>}
             {!isAuth &&
-                <Popover>
+              <Popover>
                 <PopoverTrigger>
-                <Tab pt={25} color={'grey'}>Case Studies</Tab>
+                  <Tab pt={25} color={'grey'}>Case Studies</Tab>
                 </PopoverTrigger>
-                <PopoverContent  w='520px' p='10px' fontSize={20}>
+                <PopoverContent w='520px' p='10px' fontSize={20} backgroundColor={theme === "light" ? "white" : "black"}>
                   <PopoverArrow />
                   <PopoverCloseButton />
-                  <PopoverHeader>You Need to Login First!</PopoverHeader>
+                  <PopoverHeader >You Need to Login First!</PopoverHeader>
                   <PopoverBody>To Have Access Over Our Case Study!</PopoverBody>
                 </PopoverContent>
               </Popover>
 
-              }
+            }
             <Tab pt={25} onClick={(() => { setElem("dis") })}>Company</Tab>
           </TabList>
           <TabIndicator mt="-1.5px"
@@ -149,9 +213,9 @@ export default function Navbar() {
         </Tabs>
       </div>
 
-      <div className="inp"> 
-      {elem!=="dis" && <input type="text" placeholder="Search" name="" id="search" />}
-       </div>
+      <div className="inp">
+        {/* {elem !== "dis" && <input type="text" placeholder="Search" name="" id="search" />} */}
+      </div>
       <div className="modale">
         <Modal
           initialFocusRef={initialRef}
@@ -161,7 +225,7 @@ export default function Navbar() {
 
         >
           <ModalOverlay />
-          <ModalContent className="Logform">
+          <ModalContent className="Logform" backgroundColor={theme === "light" ? "white" : "black"} color={theme !== "light" ? "white" : "black"}>
             <ModalHeader>Login into your account</ModalHeader>
             {/* <ModalCloseButton /> */}
             <ModalBody pb={6} pt={18} >
@@ -188,7 +252,7 @@ export default function Navbar() {
                   })} >
                     Login
                   </Button>
-                  <Button onClick={onClose}>Cancel</Button>
+                  <Button onClick={onClose} color={theme === "light" ? "black" : "black"}>Cancel</Button>
                 </Box>
               </Box>
             </ModalFooter>
@@ -197,13 +261,13 @@ export default function Navbar() {
       </div>
 
       <div>
-        <div className="themer"  style={{backgroundColor: theme==="light"? "black" : "orange"}}  onClick={(()=>{setTheme(theme==="light"? "dark" : "light")})}>
-            {theme=="light"? <MoonIcon mt={"2px"} color={"yellow"} boxSize={6}/> : 
-            <MoonIcon mt={"2px"} color={"white"} boxSize={6}/>
+        <div className="themer" style={{ backgroundColor: theme === "light" ? "black" : "orange" }} onClick={(() => { setTheme(theme === "light" ? "dark" : "light") })}>
+          {theme == "light" ? <MoonIcon mt={"2px"} color={"yellow"} boxSize={6} /> :
+            <MoonIcon mt={"2px"} color={"white"} boxSize={6} />
             // <Icon mt={"2px"} color={"yellow"}  boxSize={6} as={CiStar}/>
-            }
+          }
         </div>
-         
+
 
         <Popover>
           <PopoverTrigger>
@@ -219,15 +283,15 @@ export default function Navbar() {
 
 
         {message === "login" ? (<Button colorScheme='black' variant='outline'>
-          Your Work
+          Your Bookings
         </Button>) :
           (<ul className="auth">
-            <li className="loginBtn" onClick={onOpen} style={{backgroundColor: theme=="light"?  "white" : "black",color: theme=="light"?  "black" : "orange",border: theme=="light"?  "0.5px solid #cecece" : "0.5px solid orange" }}>
+            <li className="loginBtn" onClick={onOpen} style={{ backgroundColor: theme == "light" ? "white" : "black", color: theme == "light" ? "black" : "orange", border: theme == "light" ? "0.5px solid #cecece" : "0.5px solid orange" }}>
               Log In
             </li>
-            <li className="signupBtn" 
-             style={{backgroundColor: "orange" ,color: "white" }}
-             >
+            <li className="signupBtn"
+              style={{ backgroundColor: "orange", color: "white" }}
+            >
               Sign Up
             </li>
           </ul>)}
