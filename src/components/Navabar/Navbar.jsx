@@ -149,9 +149,9 @@ export default function Navbar() {
         </Tabs>
       </div>
 
-      {/* <div className="inp"> */}
+      <div className="inp"> 
       {elem!=="dis" && <input type="text" placeholder="Search" name="" id="search" />}
-      {/* </div> */}
+       </div>
       <div className="modale">
         <Modal
           initialFocusRef={initialRef}
