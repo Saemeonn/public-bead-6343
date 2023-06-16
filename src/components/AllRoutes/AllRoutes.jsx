@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../Pages/Connectivity";
 import Feeds from "../Feeds";
 import Connectivity from "../Pages/Connectivity";
 import Casestudies from "../Pages/Casestudies";
+import Home from "../Pages/Home";
 function AllRoutes() {
   return (
 // {/* Add Home, Login and dashboard  */}

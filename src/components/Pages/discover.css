@@ -36,3 +36,144 @@ input{
     display: block;
     width: 100%;
 }
+
+
+
+
+/* ///HOME */
+.tradingoptions{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 60px;
+}
+.trade{
+    /* width: 13%; */
+    margin: 30px;
+    /* height: 130px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: left; 
+    /* color: rgb(255, 111, 0); */
+}
+.qualities{
+    width:60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    margin-top: 120px;
+    gap: 60px;
+    /* width: 100%; */
+    margin-bottom:110px;
+}
+.qualities > div {
+    width: 100%;
+    text-align: left;
+    margin: 20px;
+    /* padding-right: 50px; */
+    color: rgb(49, 49, 49);
+}
+.qualities h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+.qo{
+    display: flex;
+    justify-content: center;
+}
+.Highlights >div{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.Highlights >div >div{
+    width: 17%;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+.Highlights h2{
+    font-size: 35px;
+    font-weight: 500;
+    padding: 50px 0 20px 0;
+}
+.Highlights >div  h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+.Highlights a {
+    color: rgb(255, 111, 0);
+}
+.Highlights img:hover{
+    transform: scale(1.01) ;
+}
+.Learnmore{
+    padding-top: 20px;
+    color: rgb(16, 8, 6);
+}
+.webinar img{
+    width: 100%;
+}
+.conclusion{
+    margin-top: 310px;
+    padding-bottom: 310px;
+    text-align: center;
+}
+.conclusion h2{
+    font-size: 33px;
+    font-weight: 700;
+    margin: 30px;
+}
+.conclusion button{
+    margin-top: 60px;
+    font-size: 20px;
+    width: 200px;
+    height: 66px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(255, 106, 0);
+}
+.library{
+    background-color: rgb(60, 64, 74);
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.library >div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.library h1{
+padding-bottom: 130px;
+font-size: 35px;
+font-weight: 600;
+}
+.library >div>div{
+    display: flex;
+   text-align: left;
+    width: 30%;
+    gap: 20px;
+}
+.library img{
+    width: 230px;
+}
+.library a {
+    color: rgb(255, 85, 0);
+    text-decoration: underline;
+    font-weight: 700;
+}
+.library h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+.info{
+    width: 40%;
+}
+.footer img{
+    width: 100%;
+}
