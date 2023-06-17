@@ -22,80 +22,83 @@
   "posts": [
     {
       "id": 1,
-      "title": "Avelex Stats UI",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/2a4ab2165903105.Y3JvcCwxNjE2LDEyNjQsMCww.jpg",
-      "date": "2022-01-01",
-      "category": "Photography",
-      "author_id": 2,
-      "likes": 1563,
-      "views": 15515,
-      "username": "tiana"
+      "title": "How We Adapted DXcharts into Earnings Analyzer for a Major Canadian Bank",
+      "image": "https://images.unsplash.com/photo-1642790403805-a3835434499e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRyYWRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "about": "The client is the sixth largest bank in North America by branches serving approximately 24 million customers in a number of locations in key financial centers around the globe.",
+      "challenge": "The client’s goal was to provide their customers with a new widget called “Earnings Analyzer”. The widget had to offer graphical and table representations of the relationship between earnings announcements and pricing of securities and derivatives.According to this concept, earnings events, along with corresponding pricing and volatility data, would be shown across various companies in different views in the widget.Based on our prior collaboration with the client and our proven record of delivering high-quality and scalable software products, the client asked Devexperts to implement the solution.",
+      "solution": "Based on our prior collaboration with the client and our proven record of delivering high-quality and scalable software products, the client asked Devexperts to implement the solution.      As we are constantly improving our charting library in the DXcharts project, we recognized that it was highly flexible and already included all the necessary components to make the new widget. Hence, our team only needed to make some modifications to the chart core APIs in order to prepare the library for building Earnings Analyzer.",
+      "users": 120,
+      "category": "FinTech Firm"
     },
     {
       "id": 2,
-      "title": "Raino breeze dude",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/aa12c6167039127.Y3JvcCw2NTI2LDUxMDQsMjAzNSw0MzI5.png",
-      "date": "2022-01-02",
-      "category": "Digital Art",
-      "author_id": 3,
-      "likes": 488,
-      "views": 6804,
-      "username": "ropeswag"
+      "title": "Platform with Post-Trade Allocation Management for a US Advisory Firm",
+      "image": "https://media.istockphoto.com/id/486792534/photo/stock-market-graph.jpg?s=612x612&w=0&k=20&c=cxpgH9v03T9TeYpzTQaeV2ow_-qnNKZnWhiOmXfvKTo=",
+      "about": "The client is a US-based digital custodian with more than 1,700 financial advisors, providing RIA services, including brokerage and wealth management solutions",
+      "challenge": "The client required a technical partner who could develop a fractional order management system (OMS) capable of supporting block orders across multiple asset classes. The system needed to integrate with multiple counterparties, including market makers, clearing agents, and the client’s internal back-office system. Additionally, once the orders were executed, the proceedings (cash and securities) had to be allocated back to individual accounts. For example, a basket order to buy 10,000 shares of IBM would have to be allocated to 15,000 accounts, with 0.3 shares going to account A, 1.3 shares going to account B, and so on.The system needed to send orders to the market makers at the start of the regular trading session to ensure maximum liquidity. Failure to do so could cause multi-million orders to move the market and worsen the execution price.The client’s existing OMS did not meet expectations in terms of performance, and the allocation process couldn’t support the firm’s ambitious growth plans.To meet these targets, the client needed to upgrade to an OMS which could execute tens of millions of orders in minutes.The client also required the trading system to support a wide range of instruments, including stocks, ETFs, options, bonds, and mutual funds.Such a complex task required a team with strong technical skills and extensive experience in brokerage services which could provide a turnkey solution and significantly customize it on an ambitious timeline.",
+      "solution": "The first phase of the Devexperts solution was implementing the ready-made DXtrade XT platform, which enables stock, ETF, and options trading. Devexperts then added custom features, including:",
+      "users": 220,
+      "category": "Retail Broker"
     },
     {
       "id": 3,
-      "title": "Drip flip",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e6455d166770471.Y3JvcCwxMzgwLDEwODAsMjU5LDA.jpg",
-      "date": "2022-01-03",
-      "category": "Product Design",
-      "author_id": 2,
-      "likes": 408,
-      "views": 3020,
-      "username": "tiana"
+      "title": "Back-Office Software for Leading Asia-Pacific Financial Services Provider",
+      "image": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYWRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "about": "The client is a Southeast Asia bank and one of the leading integrated financial services providers in Asia. The bank has a global presence in 20+ countries, including the EU, the US, and Australia, with 2.5+ million users.The client focuses on retail broking, institutional equities, derivatives, prime services, equity research, asset management, and online broking.",
+      "challenge": "To scale operations and meet the needs of a growing user base, brokers employ back-office software to keep up with the fast-paced financial industry and market changes. Without such software, banks and financial services providers must rely on manual processes that cause delays and inaccuracies.The absence of this technology put the client at a disadvantage when compared to their competitors who have invested in back-office software. This posed a challenge for the client to achieve their goals and keep up with user demand.The client was seeking a reputable vendor to develop their back-office software solution using a Python/Django stack. The scope of the system was to manage commissions and margin settings, produce various reports, and send them to a specific group of customers or employees.The vendor that had initially developed and supported the client’s system disengaged, leaving the client without the support they needed to manage their operations effectively. Accordingly, the client needed to partner with a reliable and experienced vendor that can give them stable, efficient, and integrated software to help them regain their competitive edge. Their search led to Devexperts, a well-known software development company that specializes in creating advanced solutions for brokerage firms.",
+      "solution": "One of the largest challenges faced by the Devexperts’ team was the accreditation required by the regional regulator. Without this, third parties cannot directly access financial systems’ source code.",
+      "users": 155,
+      "category": "Exchange"
     },
     {
       "id": 4,
-      "title": "Orientation",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/7a1271167025853.Y3JvcCwxOTIwLDE1MDEsMCww.png",
-      "date": "2022-01-04",
-      "category": "Product Design",
-      "author_id": 1,
-      "likes": 140,
-      "views": 1500,
-      "username": "john"
+      "title": "SolidusX Opts for DXtrade CFD to Launch FX/CFD/Crypto Brokerage",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "about": "SolidusX is the registered subsidiary brokerage of UK-based Solidus Capital. The broker offers 24/7 access to cryptocurrency, forex, corporate stocks, and other asset classes.",
+      "challenge": "SolidusX wanted to launch a retail brokerage and needed a trading platform. In order to differentiate and be able to attract new users quickly, SolidusX was looking for a modern trading frontend, advanced trading tools, and flexible risk-management capabilities. It was not an option for Solidus to opt for an outdated off-the-shelf frontend that dominated the CFD market from the 2000s, as the main strategy was to differentiate and attract new users.",
+      "solution": "The broker reviewed turnkey trading platforms available on the market and chose DXtrade, our trading solution for FX and CFD brokers. DXtrade is fully in line with the requirements of SolidusX in terms of the platform’s simplicity and integrated risk management and performance-boosting tools.",
+      "users": 1140,
+      "category": "Exchange"
     },
     {
       "id": 5,
-      "title": "Mick Flawed",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/dddbc3167753447.Y3JvcCw4MzgsNjU1LDAsNA.jpg",
-      "date": "2022-01-04",
-      "category": "Illustrations",
-      "author_id": 1,
-      "likes": 38,
-      "views": 670,
-      "username": "john"
+      "title": "Position and Trade Reconciliation Subsystem for a Retail Broker Offering US Securities",
+      "image": "https://images.unsplash.com/photo-1620266757065-5814239881fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJhZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "about": "The client is a global multi-asset brokerage focused on financial, investment, and copy trading services. In addition to its headquarters in Israel, the company has offices in the EU, the US, and Australia.",
+      "challenge": "The client’s core business at that time was FX and CFD trading, but they wanted to expand their offering with US exchange-listed securities. This project required an infrastructure and a system upgrade and came with an aggressive timeline. Taking this into account, the client decided to expand their engineering capacity and divide the work among several development teams.",
+      "solution": "Our task was to integrate the client’s trading platform with Apex Clearing for custody, clearing, and settlement. As a result, Apex Clearing should be able to keep a master copy of positions and trades for the broker’s reconciliation.",
+      "users": 10,
+      "category": "Trading Power"
     },
     {
       "id": 6,
-      "title": "Naver line works 23",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/0a428f168615739.Y3JvcCwxNDc2LDExNTUsMjE1LDA.png",
-      "date": "2022-01-04",
-      "category": "Illustrations",
-      "author_id": 2,
-      "likes": 408,
-      "views": 3020,
-      "username": "tiana"
+      "title": "",
+      "image": "",
+      "about": "",
+      "challenge": "",
+      "solution": "",
+      "users": 210,
+      "category": "Institutional Broker"
     },
     {
       "id": 7,
-      "title": "100 THIEVES",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/c2079b165619959.Y3JvcCwyNzYxLDIxNjAsNTQwLDA.png",
-      "date": "2022-01-04",
-      "category": "Graphics Design",
-      "author_id": 3,
-      "likes": 3008,
-      "views": 6020,
-      "username": "ropeswag"
+      "title": "A Swap Execution Facility for a CFTC-Registered Firm",
+      "image": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYWRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+      "about": "The client is a CFTC-registered IB and swap firm specializing in FX options for asset managers, family offices, hedge funds, regional banks, and proprietary desks.",
+      "challenge": "The client used to only offer customers voice trading, with employees having to book all deals in the back office manually. So the client decided to take the business to the next level by getting a properly regulated electronic FX options trading platform—a CFTC-registered swap execution facility (SEF).",
+      "solution": "The client requested a demo of DXtrade, and after conducting a competitive analysis, decided to get a custom build of our solution tailored to their needs.",
+      "users": 490,
+      "category": "FinTech Firm"
+    },
+    {
+      "id": 8,
+      "title": "",
+      "image": "",
+      "about": "",
+      "challenge": "",
+      "solution": "",
+      "users": 703,
+      "category": "Trading Power"
     }
   ]
 }

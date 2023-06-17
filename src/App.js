@@ -12,9 +12,7 @@ function App() {
   useEffect(()=>{
 
   },[isAuth,elem])
-  if (loading) {
-		return <Spinner color='red.500' />
-	}
+ 
   return (
     <div className="App" style={{backgroundColor:theme==="light"? "white" : "black",color:theme!=="light"? "white" : "black"}}>
       <Navbar />

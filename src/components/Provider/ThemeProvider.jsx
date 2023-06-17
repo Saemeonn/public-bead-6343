@@ -15,9 +15,6 @@ function ThemeProvider({children}) {
   const [elem,setElem] = useState("dash")
  
   useEffect(()=>{
- console.log(token);
- console.log(loading);
- console.log(isAuth);
   },[token,isAuth,loading,error,elem])
   const authenticate = () =>{
     setIsAuth(!isAuth)
@@ -32,7 +29,7 @@ function ThemeProvider({children}) {
  
 
   return (
-   <AuthContext.Provider value={{isAuth, authenticate, changeErr,changeLoad,setToken,setUserN,setElem,elem, loading, error, token,theme ,setTheme}} >{children}</AuthContext.Provider>
+   <AuthContext.Provider value={{isAuth, authenticate, changeErr,changeLoad,setToken,setUserN,setElem,elem, loading,changeErr,changeLoad, error, token,theme ,setTheme}} >{children}</AuthContext.Provider>
   )
 }
 export default ThemeProvider;
