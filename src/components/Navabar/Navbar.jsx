@@ -70,7 +70,6 @@ export default function Navbar() {
       const user = data.find(
         (user) => user.username === username && user.password === pass
       )
-      console.log("user", user);
       if (user) {
         authenticate()
         setUserN(user.username)

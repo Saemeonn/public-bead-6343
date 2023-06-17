@@ -177,3 +177,22 @@ font-weight: 600;
 .footer img{
     width: 100%;
 }
+.casehead{
+    padding: 120px 0 120px 0;
+}
+.casehead h1{
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.casehead p{
+    font-size: 22px;
+    color: rgb(52, 52, 52);
+}
+.cases{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 40px;
+    padding: 120px;
+}
