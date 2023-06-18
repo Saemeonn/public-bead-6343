@@ -13,10 +13,12 @@ function ThemeProvider({children}) {
   const [userN,setUserN] = useState("");
   const [token,setToken] = useState("");
   const [elem,setElem] = useState("dash")
+  const [ID,setID] = useState(null)
  
   useEffect(()=>{
-  },[token,isAuth,loading,error,elem])
+  },[token,isAuth,loading,error,elem,ID])
   const authenticate = () =>{
+    console.log(isAuth);
     setIsAuth(!isAuth)
   }
   const changeErr = () =>{
@@ -29,7 +31,7 @@ function ThemeProvider({children}) {
  
 
   return (
-   <AuthContext.Provider value={{isAuth, authenticate, changeErr,changeLoad,setToken,setUserN,setElem,elem, loading,changeErr,changeLoad, error, token,theme ,setTheme}} >{children}</AuthContext.Provider>
+   <AuthContext.Provider value={{isAuth, authenticate, changeErr,changeLoad,setToken,setUserN,setElem,setID,ID,elem, loading,setLoad,changeErr,changeLoad, error, token,theme ,setTheme}} >{children}</AuthContext.Provider>
   )
 }
 export default ThemeProvider;

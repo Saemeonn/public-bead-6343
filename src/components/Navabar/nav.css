@@ -74,6 +74,10 @@ body{
     border-radius: 50%;
     border: none;
 }
+.btns{
+    display: flex;
+    gap: 20px;
+}
 
 
 

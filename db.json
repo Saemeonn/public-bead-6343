@@ -19,6 +19,48 @@
       "role": "user"
     }
   ],
+  "meets": [
+    {
+      "id": 1,
+      "userid": 3,
+      "name": "Randy ortega",
+      "email": "randy@gmail.com",
+      "date": "05-11-2023",
+      "equity": "Futures"
+    },
+    {
+      "id": 1,
+      "userid": 3,
+      "name": "Randy ortega",
+      "email": "randy@gmail.com",
+      "date": "07-8-2024",
+      "equity": "Exchange"
+    },
+    {
+      "id": 1,
+      "userid": 2,
+      "name": "Randy ortega",
+      "email": "randy@gmail.com",
+      "date": "05-11-2023",
+      "equity": "Futures"
+    },
+    {
+      "name": "alio",
+      "email": "alio@gmail.com",
+      "date": "2023-07-08T23:10",
+      "equity": "Crypto",
+      "userid": 3,
+      "id": 2
+    },
+    {
+      "name": "Api ",
+      "email": "atol@gmail.com",
+      "date": "2023-07-08T23:10",
+      "equity": "Trading",
+      "userid": 3,
+      "id": 3
+    }
+  ],
   "posts": [
     {
       "id": 1,

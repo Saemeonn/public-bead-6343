@@ -47,7 +47,7 @@ import { useState } from "react";
 import { is } from "@babel/types";
 import Dashboard from "../Feeds";
 import { CiBrightnessDown, CiBrightnessUp, CiStar } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -58,10 +58,12 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [username, setName] = useState("")
   const [pass, setPass] = useState("")
-  const { isAuth, loading, setUserN, authenticate, setElem, elem, theme, setTheme } = useContext(AuthContext)
+  const { isAuth, loading, setUserN, authenticate, setElem, elem,setID, theme, setTheme } = useContext(AuthContext)
   const initialRef = React.useRef(null)
   const finalRef = React.useRef(null)
   const [message, setMessage] = useState(false);
+
+  const navi = useNavigate()
 
   const checkLogin = async () => {
     try {
@@ -71,8 +73,10 @@ export default function Navbar() {
         (user) => user.username === username && user.password === pass
       )
       if (user) {
+        console.log(user.id);
         authenticate()
         setUserN(user.username)
+        setID(user.id)
         setMessage("login")
         return true
       }
@@ -87,7 +91,7 @@ export default function Navbar() {
 
   useEffect(() => {
 
-  }, [message])
+  }, [message,isAuth])
   // console.log("auth", isAuth,message);
   return (
     <div className="navbar" style={{ backgroundColor: theme === "light" ? "white" : "black", color: theme === "light" ? "black" : "white" }}>
@@ -105,7 +109,7 @@ export default function Navbar() {
                   Solutions
                 </MenuButton>
                 <MenuList p={"20px "} backgroundColor={theme === "light" ? "white" : "black"}>
-                  <h1 style={{ margin: "20px 0 20px 0", fontWeight: "600", fontSize: "25px",color: theme==="light"? "black" : "orange"  }}>Trading Platform Components</h1>
+                  <h1 style={{ margin: "20px 0 20px 0", fontWeight: "600", fontSize: "25px", color: theme === "light" ? "black" : "orange" }}>Trading Platform Components</h1>
                   <MenuItem backgroundColor={theme === "light" ? "white" : "black"}> <Link to='/'>Web Trader</Link> </MenuItem>
                   <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Mobile App</MenuItem>
                   <MenuItem backgroundColor={theme === "light" ? "white" : "black"}>Order Management</MenuItem>
@@ -124,7 +128,7 @@ export default function Navbar() {
                   Services
                 </MenuButton>
                 <MenuList p={"20px "} backgroundColor={theme === "light" ? "white" : "black"}>
-                  <h1 style={{ margin: "20px 0 20px 0", fontWeight: "600", fontSize: "25px", color: theme==="light"? "black" : "orange" }}>Services By Industry Proffesionals</h1>
+                  <h1 style={{ margin: "20px 0 20px 0", fontWeight: "600", fontSize: "25px", color: theme === "light" ? "black" : "orange" }}>Services By Industry Proffesionals</h1>
                   <Grid templateColumns='repeat(2, 1fr)' gap={6}>
 
                     <GridItem >
@@ -162,7 +166,7 @@ export default function Navbar() {
                 <PopoverTrigger>
                   <Tab pt={25} color={'grey'}>Connectivity</Tab>
                 </PopoverTrigger>
-                <PopoverContent w='520px' p='10px' fontSize={20 } backgroundColor={theme === "light" ? "white" : "black"}>
+                <PopoverContent w='520px' p='10px' fontSize={20} backgroundColor={theme === "light" ? "white" : "black"}>
                   <PopoverArrow />
                   <PopoverCloseButton />
                   <PopoverHeader>You Need to Login First!</PopoverHeader>
@@ -281,9 +285,15 @@ export default function Navbar() {
         </Popover>
 
 
-        {message === "login" ? (<Button colorScheme='black' variant='outline'>
-          Your Bookings
-        </Button>) :
+        {isAuth? (
+          <div className="btns">
+            <Button color={"white"} backgroundColor={'orangered'} >
+              <Link to='connect'> Your Bookings</Link>
+            
+            </Button>
+             <Button onClick={(()=>{authenticate();navi('/')})} colorScheme='black'  variant='outline'>Log Out</Button>
+          </div>
+        ) :
           (<ul className="auth">
             <li className="loginBtn" onClick={onOpen} style={{ backgroundColor: theme == "light" ? "white" : "black", color: theme == "light" ? "black" : "orange", border: theme == "light" ? "0.5px solid #cecece" : "0.5px solid orange" }}>
               Log In

@@ -196,3 +196,179 @@ font-weight: 600;
     gap: 40px;
     padding: 120px;
 }
+.cases>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px 10px 30px 20px;
+}
+.cases >div:hover{
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+}
+.cases >div div{
+    padding: 30px;
+}
+.cases img{
+    width: 100%;
+}
+.cases h1{
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.casehead2{
+    background-color: rgb(33, 33, 63);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 30px;
+}
+.casehead2 h1{
+    margin-top: 120px;
+    font-size: 52px;
+    font-weight: 700;
+}
+.casehead2 img{
+    width: 35%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.casehead2 div{
+    width: 40%;
+}
+.caseinfo{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 120px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.caseinfo div{
+    width: 37%;
+}
+.caseinfo h2{
+    font-size: 63px;
+    font-weight: 500;
+    padding: 10px 0 10px 0;
+}
+.caseinfo p{
+    font-size: 22px;
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+/* /Connect */
+
+.connect{
+    padding: 120px 0 120px 0;
+}
+.connect h1{
+    font-size: 54px;
+    font-weight: 500;
+    margin-bottom: 90px;
+}
+.connect >div{
+    display: flex;
+    justify-content: space-around;
+}
+.bookmeet{
+    width: 40%;
+    min-height: 700px;
+    padding: 50px 10px 50px 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: 1px solid black;
+    border-radius: 30px;
+    max-height: 780px;
+
+}
+.bookmeet >div{
+    display: flex;
+    justify-content: center;
+}
+.bookmeet h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(64, 114, 206);
+    border-radius: 30px; 
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.booknow:hover{
+    background-color:rgb(64, 114, 206) ;
+    color: white;
+}
+.yourmeets{
+    width: 27%;
+    min-height: 700px;
+    padding: 50px 0px 50px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 30px;
+    background-color: rgb(69, 124, 228);
+}
+.yourmeets > div{
+    display: flex;
+    justify-content: center;  
+}
+.yourmeets h2{
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border-radius: 30px; 
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 60px;
+    width: 70%;
+    text-align: center;
+}
+.yourmeets h4{
+    font-style: italic;
+    text-decoration: underline;
+    color: orangered;
+    font-weight: bolder;
+}
+.yourmeets h4:hover{
+    cursor: pointer;
+}
+.meetlist{
+    background-color: rgb(106, 149, 229);
+    min-height: 500px;
+    border-radius: 10px; 
+    width: 100%;
+    padding: 20px;
+    max-height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.meetlist div{
+    border-radius: 10px; 
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 410px;
+}
+.meetlist div:hover{
+    background-color:  rgb(53, 117, 235);
+    color: white;
+}
+.meetlist h3{
+    font-size: 26px;
+    font-weight: 600;
+}
+.meethead{
+    display: flex;
+    justify-content: center;
+}
+.noti{
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+}
