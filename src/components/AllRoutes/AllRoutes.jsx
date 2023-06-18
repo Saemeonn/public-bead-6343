@@ -21,7 +21,11 @@ function AllRoutes() {
           <SingleCasestudies />
         </PrivateRoute>
       } ></Route>
-      <Route path="/connect" element={<Connectivity />} ></Route>
+      <Route path="/connect" element={
+        <PrivateRoute>
+          <Connectivity />
+        </PrivateRoute>
+      } ></Route>
     </Routes>
   )
 }

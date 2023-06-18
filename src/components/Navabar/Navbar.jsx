@@ -97,6 +97,7 @@ export default function Navbar() {
     <div className="navbar" style={{ backgroundColor: theme === "light" ? "white" : "black", color: theme === "light" ? "black" : "white" }}>
       <div>
         {/* <img src={require("../../ArtChatwhite.png")} alt="" /> */}
+        <img style={{marginTop:'10px'}} src="https://devexperts.com/app/themes/devexperts/dist/images/devexperts-logo-orange.17fa0fc7.svg" alt="" />
         <Tabs mt={25} size={"lg"} variant="unstyled" >
           <TabList >
             <Tab pt={25} >
